@@ -10,6 +10,7 @@ def caesarCypher(word, key, newWord):
         print(f"original position {position}")
         position += key
         print(f"new position {position}")
+        #the last letter is shifted back to postion 0
         if position == len(alphabet):
             position -= len(alphabet)
         newWord += alphabet[position]
